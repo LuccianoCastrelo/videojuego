@@ -1,24 +1,18 @@
-import './App.css';
+import React from 'react';
+import GameList from './components/GameList';
 
-function App() {
+const games = [
+  { title: 'Game 1', description: 'This is an awesome game!', imgSrc: '/images/game1.jpg' },
+  { title: 'Game 2', description: 'This game is even better!', imgSrc: '/images/game2.jpg' },
+];
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Videojuegos Populares</h1>
+      <GameList games={games} />
     </div>
   );
-}
+};
 
 export default App;
