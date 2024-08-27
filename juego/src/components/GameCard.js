@@ -1,4 +1,3 @@
-// src/components/GameCard.js
 import React, { useState } from 'react';
 
 const GameCard = ({ title, description, imgSrc }) => {

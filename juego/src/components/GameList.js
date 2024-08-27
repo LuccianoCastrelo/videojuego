@@ -1,4 +1,3 @@
-// src/components/GameList.js
 import React from 'react';
 import GameCard from './GameCard';
 
