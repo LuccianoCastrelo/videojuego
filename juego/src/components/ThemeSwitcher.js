@@ -1,4 +1,3 @@
-// src/components/ThemeSwitcher.js
 import React from 'react';
 
 const ThemeSwitcher = ({ theme, toggleTheme }) => {

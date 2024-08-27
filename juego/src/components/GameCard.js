@@ -9,7 +9,7 @@ const GameCard = ({ title, description, imgSrc }) => {
 
   return (
     <div className="game-card">
-      <img src={imgSrc} alt={title} />
+      <img src={imgSrc} alt={title} className="game-card-image" />
       <h2>{title}</h2>
       <p>{description}</p>
       <button onClick={handleLike}>Like ({likes})</button>

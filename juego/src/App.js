@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import GameList from './components/GameList';
 import ThemeSwitcher from './components/ThemeSwitcher';
-import './App.css';  // Asegúrate de que App.css esté importado
+import './App.css';  
 
 const games = [
-  { title: 'Game 1', description: 'This is an awesome game!', imgSrc: '/images/game1.jpg' },
-  { title: 'Game 2', description: 'This game is even better!', imgSrc: '/images/game2.jpg' },
+  { title: 'Valorant', description: 'Shooter Riot', imgSrc: '/resources/imagen1.png' },
+  { title: 'Counter-Strike 2', description: 'Shooter Valve!', imgSrc: '/resources/imagen2.png' },
 ];
 
 const App = () => {
