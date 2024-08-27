@@ -1,3 +1,6 @@
+/* src/App.css */
+
+/* Estilos generales */
 html, body, #root {
   height: 100%;
   margin: 0;
@@ -19,27 +22,65 @@ html, body, #root {
   color: white;
 }
 
+/* Estilos mejorados para el botón de cambio de tema */
 .theme-toggle {
-  padding: 10px 20px;
+  padding: 8px 16px;
   cursor: pointer;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+  border-radius: 20px; /* Bordes redondeados más pequeños */
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .theme-toggle:hover {
   background-color: #0056b3;
+  transform: translateY(-2px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
 }
 
+.theme-toggle:active {
+  transform: translateY(0); /* Sin elevación al hacer clic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más suave al hacer clic */
+}
+
+/* Estilos mejorados para el botón de "Like" */
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Otros estilos */
 .game-card {
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;
   text-align: center;
   width: 300px;
-  height: 400px; 
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,7 +89,7 @@ html, body, #root {
 .game-card-image {
   width: 100%;
   height: auto;
-  max-height: 200px; 
+  max-height: 200px;
   object-fit: cover;
 }
 
